@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 1028px;
+    background: #ffff;
+}
+.logo-header{
+    clear: both;
+    float:left;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.logo-header h1{
+    position: absolute;
+    z-index: -1;
+    color: #ffff;
+}
+.logo{
+    display: block;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+
+}
+.lg-mbf{
+    float: left;
+}
+a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    transition: transform 0.3s ease-out 0s;
+}
+.search_header{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 0px;
+    position:relative;
+}
+form{
+    display: block;
+}
+.search_header input{
+    background-clip: padding-box;
+    background-color: #ffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    box-shadow: 1px 2px 1px rgb(0 1 1 / 5%) inset;
+    height: 30px;
+    padding: 10px;
+    width: 300px;
+    margin-left: 280px;
+    margin-top: -2000px;
+}
+input[type="hidden" i]{
+    appearance: none;
+    cursor:default;
+    display: none !important;
+    margin-top: -50px;
+}
+input{
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color:fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    -webkit-rtl-ordering: logical;
+}
+.search_header button{
+    background: none repeat scroll 0 0 rbga(0, 0, 0, 0);
+    border:medium none;
+    cursor: pointer;
+    position:absolute;
+    right: 10px;
+    top: 8px;
+}
+button{
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: 0px;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.search_header button i{
+    color:#979dab;
+    display: block;
+    font-size: 18px;
+}
+i{
+    font-style: italic;
+}
+.search_header .sbox-ajax{
+    position: absolute;
+    width: 489px;
+    background: #ffff;
+    border: #cfcfcf solid 1px;
+    margin: 2px 0px 0px -1px;
+    z-index: 10090;
+    border-top:0px;
+}
+.search_header .sbox-ajax .boxScrollDiv{
+    overflow: hidden;
+}
+.lg_mbook{
+    float: right;
+    margin-top: 7px;
+}
+.lg-mbf a{
+    margin: 0px 10px;
+}
+.icon_dangky {
+    background: url(../resouces/img/signup.png) no-repeat left center;
+    height: 15px;
+    padding-right: 20px;
+    width: 15px;
+}
+.icon_dangnhap{
+    background: url(../resouces/img/signup.png) no-repeat left center;
+    height: 15px;
+    width: 15px;
+    padding-right: 20px;
+}
+.container{
+    max-width: 1155px;
+    margin: 120px auto 0;
+}
+ul{
+    list-style-type: none;
+}
+/*build class clearfix để giải quyết float*/
+.clearfix:before, .clearfix:after{
+    content:'';
+    display: table;
+    clear:both;
+}
+.menu{
+    background: #008000;
+    text-align: center;
+}
+
+/*menu cấp 1*/
+.menu > li {
+    float: left;
+    position:relative;
+}
+.menu > li a{
+    display:block;
+    font-size: 16px;
+    padding: 10px 15px;
+    color: #ffff;
+    text-decoration: none;
+    border-right: 1px solid #fefefe;
+}
+.menu > li a:hover, .menu li:hover > a{
+    background:#05a047;
+}
+/*style menu cấp 2*/
+.menu ul{
+    position:absolute;
+    top: 100%;
+    left: 0;
+    min-width:200px;
+    background:#008000;
+    display: none;
+}
+.menu ul li{
+    text-align: left;
+}
+/*style khi hovel li, show menu con của li đó}*/
+.menu li:hover > ul{
+    display: block;
+}
+
+.content_main{
+    clear:both;
+    float:left;
+    margin-top: 10px;
+    min-height: 300px;
+    width:100%;
+}
+.left_content{
+    float:left;
+    margin-right: 0;
+    width:1000px;
+    padding-left: 15px;
+}
+.box_cate{
+    float:left;
+    margin-bottom: 10px;
+    position:relative;
+    width: 100%;
+}
+.title_box{
+    float:left;
+    height: 41px;
+    line-height: 41px;
+    margin-bottom: 15px;
+}
+.icon_book{
+    background:url(./resouces/img/iconbook.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.icon_book{
+    display:block;
+    float:left;
+    height:41px;
+    margin-right: 7px;
+    width: 41px;
+}
+.title_box span{
+    color:#062f3b;
+    font-size: 16px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.readmore{
+    background: none repeat scroll 0 0 #ffff;
+    border:1px solid #a7a7a7;
+    float: right;
+    margin-right:19px;
+    margin-top:12px;
+    padding: 2px 5px;
+}
+.content_box{
+    clear:both;
+    float:left;
+    width:100%;
+    overflow:hidden;
+}
+.list_book_scoll {
+    overflow:hidden;
+    overflow-y:hidden;
+    margin-bottom: 10px;
+    min-height: 300px;
+}
+.list_book ul{
+    display:block;
+}
+.list_book ul li{
+    position:relative;
+}
+.list_book ul li{
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 2px;
+}
+ul li{
+    list-style: none outside none;
+}
+.list_book .thumb_list{
+    height:220px;
+    margin-right: 17px;
+    overflow:hidden;
+    position:relative;
+    width: 150px;
+}
+li{
+    text-align: -webkit-match-parent;
+}
+.list_book ul li img{
+    width: 148px;
+    height: 218px;
+    border:1px solid #cccc;
+}
+.list_book .simple-caption{
+    bottom: -95px;
+    display: block;
+    padding: 10px 0 10px 5px;
+    z-index: 2;
+}
+.list_book .hover_book{
+    background-color: rgba(27, 26, 26, 0.6);
+}
+.list_book ul li span{
+    margin: 2px 0;
+}
+.hover_book{
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    display:block;
+    padding:10px;
+    position:absolute;
+}
+.hover_book span{
+    color:#ffff;
+    display:inline-block;
+    margin: 5px 0;
+}
+.list_book .hover_book span.tacgia{
+    color:#ffff;
+    display:inline-block;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 148px;
+}
+.list_book .hover_book span.nxb{
+    color:#ffff;
+    display:inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 148px;
+    color: #fe6a6a;
+}
+.list_book .btn_hover{
+    display:block;
+}
+
+.list_book .btn_white{
+    float:left;
+    height: 25px;
+    line-height:25px;
+    margin-right: 5px;
+    width: 65px;
+}
+.btn_white {
+    background: none repeat scroll 0 0 #ffff;
+    border: medium none;
+    border-radius: 2px;
+    cursor:pointer;
+    display:inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    width: 89px;
+}
+.icon_doc{
+    background: url(../resouces/img/icon_xem.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 12px;
+    margin-right: 3px;
+    margin-top: -3px;
+    vertical-align: middle;
+    width: 18px;
+    color: #ffff;
+}
+.list_book .name{
+    font-size: 14px !important;
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 167px;
+    line-height: 35px;
+}
+footer{
+    clear: both;
+    float:left;
+    width: 100%;
+    background:#ffff;
+    display: block;
+}
+.footer_info{
+    border-top: 1px solid #cccc;
+    float:left;
+    margin-bottom: 10px;
+    width:100%;
+}
+.footer_info .ft_info_left{
+    position:relative;
+}
+.ft_info_left{
+    float:left;
+    width: 500px;
+}
+.footer_info .ft_info_left img{
+    margin-bottom: 40px;
+}
+.ft_info_left img{
+    float:left;
+    margin: 10px 10px 10px;
+    width: 120px;
+}
+.footer_info p{
+    line-height: 25px;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.footer_info .ft_info_right{
+    padding-right: 5px;
+}
+.ft_info_right{
+    color:black;
+    float:right;
+    font: 11px Arial, Helvetica, sans-serif;
+}
+.bold{
+    font-weight: bold;
+}
+.scrollup{
+    width: 75px;
+    height: 75px;
+    opacity: 0.8;
+    position:fixed;
+    bottom: 95px;
+    right: 5px;
+    display: none;
+    text-indent: -9999px;
+    background: url(../resouces/img/trolentren.png) no-repeat;
+}

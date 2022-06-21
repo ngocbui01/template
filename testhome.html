@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <script src="https://your-site-or-cdn.com/fontawesome/v5.15.4/js/all.js"></script>
+    <link rel = "stylesheet" type="text/css" href ="menu.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper" id="divLoginButton">
+            <div class="logo_header">
+                <div class="lg_mbf">
+                    <a href="/" title="Quản lý thư viện sách">
+                            <h1><a href="#"><img class="logo" src="./resouces/img/KMAlogo.png" alt="logo"></a></h1>
+                        <i class="logo_mobifone"></i>
+                    </a>
+                </div>
+                <div class="search_header">
+                    <form class="frm-search" method="post" action="/Home/Search" id="frmSearch" name="frmSearch">
+                         <input name="__RequestVerificationToken" type="hidden" value="IKXlN1vlq7vBxpKdDbN5y2CZKhuQDnMw0vyD9065M2nD5hUgr5VYNCU5dggq_zN2C5TuQREPyriT79UqyNBHMIy8TZT7nLW-GQ15RQNdUNRu3RnuESPArYcEaq8bU0JkNCaTXEdprxsn1NlQjYZLzWFS_uKv7GO5KBPrh6B4VRE1" />
+                         <input type="text" class="search-box" placeholder="Tìm kiếm" name="key"/>
+                        <button><i class="fa fa-search"></i></button>
+        
+                    </form>
+                    <div id="divBoxSearchData" class="sbox-ajax" style="display: none;">
+                        <div style="float: left; width: 489px; max-height: 460px;">
+                            <div class="boxScrollDiv" style="position: relative; width: auto; max-height: 460px;">
+                                <div id="idScrllLoadData" style="width: auto; max-height: 460px;"></div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="lg_mbook">
+                        <a href="/dangky.html" style="font-size:18px"><i class="icon_dangky"></i>Đăng ký</a>
+                        <a href="/dangnhap.html" style="font-size:18px"><i class="icon_dangnhap"></i>Đăng nhập</a>
+                    
+                </div>
+            </div>
+        </div>
+    <div class = "container">
+        <ul class = "menu clearfix">
+           <li><a href = "#">TRANG CHỦ</a></li>
+           <li>
+               <a href = "#">GIÁO TRÌNH</a>
+               <ul>
+                   <li><a href="#">MÔN CƠ BẢN</a></li>
+                   <li><a href="#">AN TOÀN THÔNG TIN</a></li>
+                   <li><a href="#">CÔNG NGHỆ THÔNG TIN</a></li>
+                   <li><a href="#">ĐIỆN TỬ - VIỄN THÔNG</a></li>
+                   <li><a href="#">MẬT MÃ</a></li>
+               </ul>
+            </li>
+           <li>
+               <a href = "#">SÁCH THAM KHẢO</a>
+               <ul>
+                <li><a href="#">MÔN CƠ BẢN</a></li>
+                <li><a href="#">AN TOÀN THÔNG TIN</a></li>
+                <li><a href="#">CÔNG NGHỆ THÔNG TIN</a></li>
+                <li><a href="#">ĐIỆN TỬ-VIỄN THÔNG</a></li>
+                <li><a href="#">BÁO-TẠP CHÍ</a></li>
+                <li><a href="#">CÁC THỂ LOẠI KHÁC</a></li>
+               </ul>
+           </li>
+           <li>
+               <a href = "#">QUẢN LÝ SÁCH</a>
+               <ul>
+                <li><a href="#">THÊM SÁCH</a></li>
+                <li><a href="#">SỬA SÁCH</a></li>
+                <li><a href="#">XOÁ SÁCH</a></li>
+               </ul>
+            </li>
+           <li>
+               <a href = "#">QUẢN LÝ ĐỘC GIẢ</a>
+               <ul>
+                <li><a href="#">THÊM ĐỘC GIẢ</a></li>
+                <li><a href="#">SỬA ĐỘC GIẢ</a></li>
+                <li><a href="#">XOÁ ĐỘC GIẢ</a></li>
+               </ul>
+            </li>
+           <li>
+               <a href = "#">QUẢN LÝ MƯỢN/TRẢ SÁCH</a>
+               <ul>
+                <li><a href="#">MƯỢN SÁCH</a></li>
+                <li><a href="#">TRẢ SÁCH</a></li>
+               </ul>
+            </li>
+            <li>
+                <a href = "#">QUẢN LÝ TÁC GIẢ</a>
+                <ul>
+                    <li><a href="#">THÊM TÁC GIẢ</a></li>
+                    <li><a href="#">XOÁ TÁC GIẢ</a></li>
+                    <li><a href="#">SỬA TÁC GIẢ</a></li>
+                </ul>
+             </li>
+        </ul>
+    </div>
+</header>
+<div class = "main">
+    <div class = "wrapper">
+        <div class = "content_main">
+            <div class = "left_content">
+                <div class = "box_cate">
+                    <div class = "title_book">
+                        <i class="icon_book"></i>
+                        <span>SÁCH MƯỢN NHIỀU</span>
+                    </div>
+                    <div class="readmore">
+                        <a href = "/moncoban.html">Xem tất cả>></a>
+                    </div>
+                    <div class="content_box">
+                        <div class="list_book list_book_scoll">
+                            <ul style = "width: 1800px;">
+                                <li>
+                                    <div class = "thumb_list">
+                                        <a href = "/moncoban/toancaocap-giaitich1.html">
+                                         <img src = "./resouces/img/gtich1.jpg" alt = "Giải tích 1">
+                                        </a>
+                                        <span class="hover_book caption simple-caption">
+                                            <span class="tacgia">Tác giả: Nguyễn Đình Trí
+                                            </span>
+                                            <span class="nxb">NXB: NXB Giáo dục</span>
+                                            <span class = "btn_hover">
+                                                <a href = "/moncoban/toancaocap-giaitich1.html">
+                                                    <button class="btn_white">
+                                                        <i class = "icon_doc"></i>
+                                                        "Xem"
+                                                    </button>
+                                                </a>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <a href = "/moncoban/toancaocap-giaitich1.html">
+                                        <h3 class="name">Toán cao cấp - Giải tích 1</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class = "thumb_list">
+                                        <a href = "/moncoban/toancaocap-giaitich2.html">
+                                         <img src = "./resouces/img/giaitich2.jpg" alt = "Giải tích 2">
+                                        </a>
+                                        <span class="hover_book caption simple-caption">
+                                            <span class="tacgia">Tác giả: Nguyễn Đình Trí
+                                            </span>
+                                            <span class="nxb">NXB: NXB Giáo dục</span>
+                                            <span class = "btn_hover">
+                                                <a href = "/moncoban/toancaocap-giaitich2.html">
+                                                    <button class="btn_white">
+                                                        <i class = "icon_doc"></i>
+                                                        "Xem"
+                                                    </button>
+                                                </a>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <a href = "/moncoban/toancaocap-giaitich2.html">
+                                        <h3 class="name">Toán cao cấp - Giải tích 2</h3>
+                                    </a> 
+                                </li>
+                                <li>
+                                    <div class = "thumb_list">
+                                        <a href = "/moncoban/toancaocap-dstt.html">
+                                         <img src = "./resouces/img/đstt.jpg" alt = "Đại số tuyến tính">
+                                        </a>
+                                        <span class="hover_book caption simple-caption">
+                                            <span class="tacgia">Tác giả: Nguyễn Đình Trí
+                                            </span>
+                                            <span class="nxb">NXB: NXB Giáo dục</span>
+                                            <span class = "btn_hover">
+                                                <a href = "/moncoban/toancaocap-đstt.html">
+                                                    <button class="btn_white">
+                                                        <i class = "icon_doc"></i>
+                                                        "Xem"
+                                                    </button>
+                                                </a>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <a href = "/moncoban/toancaocap-đstt.html">
+                                        <h3 class="name">Toán cao cấp - Đại số tuyến tính</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class = "thumb_list">
+                                        <a href = "/cntt/thdc.html">
+                                         <img src = "./resouces/img/thdc.jpg" alt = "Tin học đại cương">
+                                        </a>
+                                        <span class="hover_book caption simple-caption">
+                                            <span class="tacgia">Tác giả: Trần Đình Khang
+                                            </span>
+                                            <span class="nxb">NXB: NXB Bách Khóa HN</span>
+                                            <span class = "btn_hover">
+                                                <a href = "/cntt/thdc.html">
+                                                    <button class="btn_white">
+                                                        <i class = "icon_doc"></i>
+                                                        "Xem"
+                                                    </button>
+                                                </a>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <a href = "/cntt/thdc.html">
+                                        <h3 class="name">Tin học đại cương</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class = "thumb_list">
+                                        <a href = "/moncoban/triethocmaclenin.html">
+                                         <img src = "./resouces/img/maclenin.jpg" alt = "Triết học Mac-Lenin">
+                                        </a>
+                                        <span class="hover_book caption simple-caption">
+                                            <span class="tacgia">Tác giả: Bộ Giáo dục và Đào tạo
+                                            </span>
+                                            <span class="nxb">NXB: NXB Chính trị Quốc gia sự thật</span>
+                                            <span class = "btn_hover">
+                                                <a href = "/moncoban/triethocmaclenin.html">
+                                                    <button class="btn_white">
+                                                        <i class = "icon_doc"></i>
+                                                        "Xem"
+                                                    </button>
+                                                </a>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <a href = "/moncoban/triethocmaclenin.html">
+                                        <h3 class="name">Triết học Mác-Lênin</h3>
+                                    </a>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+                <div class = "box_cate">
+                    <div class = "title_box">
+                        <i class="icon_book"></i>
+                        <span>GIÁO TRÌNH</span>
+                    </div>
+                    <div class = "readmore">
+                        <a href = "/giaotrinh.html">Xem tất cả>></a>
+                    </div>
+                    <div class = "content_box">
+                        <div class = "list_book list_book_scoll">
+                           <ul style = "width: 1557px">
+                             <li>
+                                 <div class = "thumb_list">
+                                     <a href = "/giaotrinh/moncoban/kinhtechinhtri.html">
+                                         <img src = "./resouces/img/ktct.jpg" alt = "Kinh tế chính trị">
+                                     </a>
+                                     <span class = "hover_book caption simple-caption">
+                                          <span class = "tacgia">Tác giả: Bộ Giáo dục và Đào tạo</span>
+                                          <span class = "nxb"> NXB: NXB Chính trị Quốc gia sự thật</span>
+                                          <span class = "btn_hover">
+                                              <a href = "/giaotrinh/moncoban/kinhtechinhtri.html">
+                                                  <button class = "btn_white">
+                                                      <i class = "icon_doc"></i>
+                                                      "Đọc"
+                                                  </button>
+                                              </a>
+                                          </span>
+                                     </span>
+                                 </div>
+                                 <a href = "/giaotrinh/moncoban/kinhtechinhtri.html">
+                                     <h3 class = "name">Kinh tế chính trị</h3>
+                                 </a>
+                             </li>
+                             <li>
+                                <div class = "thumb_list">
+                                    <a href = "/giaotrinh/congnghethongtin/cautrucdulieuvagiaithuat.html">
+                                        <img src = "./resouces/img/ctdl&gt.jpg" alt = "Cấu trúc dữ liệu và Giải thuật">
+                                    </a>
+                                    <span class = "hover_book caption simple-caption">
+                                         <span class = "tacgia">Tác giả: Đỗ Xuân Lôi</span>
+                                         <span class = "nxb"> NXB: NXB Đại học Quốc gia Hà Nội</span>
+                                         <span class = "btn_hover">
+                                             <a href = "/giaotrinh/congnghethongtin/cautrucdulieuvagiaithuat.html">
+                                                 <button class = "btn_white">
+                                                     <i class = "icon_doc"></i>
+                                                     "Đọc"
+                                                 </button>
+                                             </a>
+                                         </span>
+                                    </span>
+                                </div>
+                                <a href = "/giaotrinh/congnghethongtin/cautrucdulieuvagiaithuat.html">
+                                    <h3 class = "name">Cấu trúc dữ liệu và Giải thuật</h3>
+                                </a> 
+                             </li>
+                             <li>
+                                <div class = "thumb_list">
+                                    <a href = "/giaotrinh/dientu-vienthong/kttsl.html">
+                                        <img src = "./resouces/img/kttsl.jpg" alt = "Kỹ thuật truyền số liệu">
+                                    </a>
+                                    <span class = "hover_book caption simple-caption">
+                                         <span class = "tacgia">Tác giả: Nhiều tác giả</span>
+                                         <span class = "nxb"> NXB: NXB Đại học Quốc gia TP Hồ Chí Minh</span>
+                                         <span class = "btn_hover">
+                                             <a href = "/giaotrinh/dientu-vienthong/kttsl.html">
+                                                 <button class = "btn_white">
+                                                     <i class = "icon_doc"></i>
+                                                     "Đọc"
+                                                 </button>
+                                             </a>
+                                         </span>
+                                    </span>
+                                </div>
+                                <a href = "/giaotrinh/dientu-vienthong/kttsl.html">
+                                    <h3 class = "name">Kỹ thuật truyền số liệu</h3>
+                                </a>   
+                             </li>
+                             <li>
+                                <div class = "thumb_list">
+                                    <a href = "/giaotrinh/congnghethongtin/cnmmt.html">
+                                        <img src = "./resouces/img/cnmmt.jpg" alt = "Công nghệ mạng máy tính">
+                                    </a>
+                                    <span class = "hover_book caption simple-caption">
+                                         <span class = "tacgia">Tác giả: Học viện CN bưu chính viễn thông</span>
+                                         <span class = "nxb"> NXB: NXB Thông tin và Truyền thông</span>
+                                         <span class = "btn_hover">
+                                             <a href = "/giaotrinh/congnghethongtin/cnmmt.html">
+                                                 <button class = "btn_white">
+                                                     <i class = "icon_doc"></i>
+                                                     "Đọc"
+                                                 </button>
+                                             </a>
+                                         </span>
+                                    </span>
+                                </div>
+                                <a href = "/giaotrinh/congnghethongtin/cnmmt.html">
+                                    <h3 class = "name">Báo nhân dân</h3>
+                                </a>
+                             </li>
+                             <li>
+                                <div class = "thumb_list">
+                                    <a href = "/giaotrinh/moncoban/vatlya1.html">
+                                        <img src = "./resouces/img/vatlya1.jpg" alt = "Vật lý đại cương A1">
+                                    </a>
+                                    <span class = "hover_book caption simple-caption">
+                                         <span class = "tacgia">Tác giả: Lương Duyên Bình</span>
+                                         <span class = "nxb"> NXB: NXB Giáo dục Việt Nam</span>
+                                         <span class = "btn_hover">
+                                             <a href = "/giaotrinh/moncoban/vatlya1.html">
+                                                 <button class = "btn_white">
+                                                     <i class = "icon_doc"></i>
+                                                     "Đọc"
+                                                 </button>
+                                             </a>
+                                         </span>
+                                    </span>
+                                </div>
+                                <a href = "/giaotrinh/moncoban/vatlya1.html">
+                                    <h3 class = "name">Vật lý đại cương A1</h3>
+                                </a> 
+                             </li>
+                           </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class = "box_cate">
+                    <div class = "title_box">
+                        <i class="icon_book"></i>
+                        <span>SÁCH THAM KHẢO</span>
+                    </div>
+                    <div class = "readmore">
+                        <a href = "/sachthamkhao.html">Xem tất cả>></a>
+                    </div>
+                    <div class = "content_box">
+                        <div class = "list_book list_book_scoll">
+                           <ul style = "width: 1557px">
+                             <li>
+                                 <div class = "thumb_list">
+                                     <a href = "/sachthamkhao/bao-tapchi/hoahoctro.html">
+                                         <img src = "./resouces/img/hoahoctro.jpg" alt = "Hoa Học Trò">
+                                     </a>
+                                     <span class = "hover_book caption simple-caption">
+                                          <span class = "tacgia">Tác giả: Nhiều tác giả</span>
+                                          <span class = "nxb"> NXB: Báo Tiền phong</span>
+                                          <span class = "btn_hover">
+                                              <a href = "/sachthamkhao/bao-tapchi/hoahoctro.html">
+                                                  <button class = "btn_white">
+                                                      <i class = "icon_doc"></i>
+                                                      "Đọc"
+                                                  </button>
+                                              </a>
+                                          </span>
+                                     </span>
+                                 </div>
+                                 <a href = "/sachthamkhao/bao-tapchi/hoahoctro.html">
+                                     <h3 class = "name">Hoa học trò</h3>
+                                 </a>
+                             </li>
+                             <li>
+                                <div class = "thumb_list">
+                                    <a href = "/sachthamkhao/cactheloaikhac/harrypotter1.html">
+                                        <img src = "./resouces/img/harry_tap1_hondavaphuthuy.jpg" alt = "Harry Potter và Hòn đá phù thủy - Tập 1">
+                                    </a>
+                                    <span class = "hover_book caption simple-caption">
+                                         <span class = "tacgia">Tác giả: J.K.Rowling</span>
+                                         <span class = "nxb"> NXB: NXB Trẻ</span>
+                                         <span class = "btn_hover">
+                                             <a href = "/sachthamkhao/cactheloaikhac/harrypotter1.html">
+                                                 <button class = "btn_white">
+                                                     <i class = "icon_doc"></i>
+                                                     "Đọc"
+                                                 </button>
+                                             </a>
+                                         </span>
+                                    </span>
+                                </div>
+                                <a href = "/sachthamkhao/cactheloaikhac/harrypotter1.html">
+                                    <h3 class = "name">Harry Potter và hòn đá phù thủy - Tập 1</h3>
+                                </a> 
+                             </li>
+                             <li>
+                                <div class = "thumb_list">
+                                    <a href = "/sachthamkhao/bao-tapchi/changvang1.html">
+                                        <img src = "./resouces/img/chạngvang.png" alt = "Twilight - Chạng vạng">
+                                    </a>
+                                    <span class = "hover_book caption simple-caption">
+                                         <span class = "tacgia">Tác giả: Stephenie Meyer</span>
+                                         <span class = "nxb"> NXB: NXB Trẻ</span>
+                                         <span class = "btn_hover">
+                                             <a href = "/sachthamkhao/cactheloaikhac/harrypotter1.html">
+                                                 <button class = "btn_white">
+                                                     <i class = "icon_doc"></i>
+                                                     "Đọc"
+                                                 </button>
+                                             </a>
+                                         </span>
+                                    </span>
+                                </div>
+                                <a href = "/sachthamkhao/bao-tapchi/changvang1.html">
+                                    <h3 class = "name">Chạng vạng</h3>
+                                </a>   
+                             </li>
+                             <li>
+                                <div class = "thumb_list">
+                                    <a href = "/sachthamkhao/bao-tapchi/baonhandan.html">
+                                        <img src = "./resouces/img/báond.jpg" alt = "Báo Nhân dân">
+                                    </a>
+                                    <span class = "hover_book caption simple-caption">
+                                         <span class = "tacgia">Tác giả: Nhiều tác giả</span>
+                                         <span class = "nxb"> NXB: Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam</span>
+                                         <span class = "btn_hover">
+                                             <a href = "/sachthamkhao/bao-tapchi/baonhandan.html">
+                                                 <button class = "btn_white">
+                                                     <i class = "icon_doc"></i>
+                                                     "Đọc"
+                                                 </button>
+                                             </a>
+                                         </span>
+                                    </span>
+                                </div>
+                                <a href = "/sachthamkhao/bao-tapchi/baonhandan.html">
+                                    <h3 class = "name">Báo nhân dân</h3>
+                                </a>
+                             </li>
+                             <li>
+                                <div class = "thumb_list">
+                                    <a href = "/sachthamkhao/moncoban/toeic.html">
+                                        <img src = "./resouces/img/600wordtoeic.jpg" alt = "600 essential words for the TOEIC">
+                                    </a>
+                                    <span class = "hover_book caption simple-caption">
+                                         <span class = "tacgia">Tác giả: Barron's</span>
+                                         <span class = "nxb"> NXB: NXB Tổng hợp TP Hồ Chí Minh</span>
+                                         <span class = "btn_hover">
+                                             <a href = "/sachthamkhao/moncoban/toeic.html">
+                                                 <button class = "btn_white">
+                                                     <i class = "icon_doc"></i>
+                                                     "Đọc"
+                                                 </button>
+                                             </a>
+                                         </span>
+                                    </span>
+                                </div>
+                                <a href = "/sachthamkhao/moncoban/toeic.html">
+                                    <h3 class = "name">600 essential words for TOEIC</h3>
+                                </a> 
+                             </li>
+                           </ul> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style = "clear:both;"></div>
+        <footer>
+            <div class = "footer_info">
+                <div class = "ft_info_left">
+                    <img src = "resouces/img/KMAlogo.png" alt="logo library">
+                </div>
+                <p>Copyright 2022</p>
+                <div class = "ft_info_right">
+                  <p class = "f14 bold">HỌC VIỆN KỸ THUẬT MẬT MÃ</p>
+                  <p>Địa chỉ: 141 đường Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội</p>
+                  <p>SĐT: 0897358691</p>
+                <div class = "clear"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div style = "clear:both;"></div>
+    <a href = "#" class = "scrollup" style = "display: block;">Scroll</a>
+</div>
+</body>
+</html>
